@@ -25,6 +25,22 @@ body {
   border-radius: 50%;
   border: 1px solid #9b9b9b;
   cursor: pointer;
+  position: relative;
+}
+
+.gpio-button-wrapper .enabled {
+  filter: drop-shadow(2px 4px 6px gray);
+}
+
+.gpio-button-wrapper .enabled::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  font-size: 40px;
+  color: #5b5b5b;
+  content: "+";
 }
 
 .gpio-button-wrapper button:disabled {
