@@ -1,0 +1,52 @@
+body {
+  font-family: monospace;
+}
+
+.gpio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.gpio-container-line {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.gpio-button-wrapper {
+  padding: 2px;
+}
+
+.gpio-button-wrapper button {
+  width: 40px;
+  height: 40px;
+  background: #9b9b9b;
+  border-radius: 50%;
+  border: 1px solid #9b9b9b;
+  cursor: pointer;
+}
+
+.gpio-button-wrapper button:disabled {
+  cursor: not-allowed;
+}
+
+.pin-power button {
+  background: #f00;
+}
+
+.pin-gpio button {
+  background: #ffa600;
+}
+
+.pin-power3 button {
+  background: yellow;
+}
+
+.pin-ground button {
+  background: #000;
+}
+
+.pin-uart button {
+  background: #0f0;
+}
