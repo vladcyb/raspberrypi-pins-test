@@ -7,6 +7,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  padding: 20px 0;
 }
 
 .gpio-container-line {
@@ -16,6 +17,7 @@ body {
 
 .gpio-button-wrapper {
   padding: 2px;
+  position: relative;
 }
 
 .gpio-button-wrapper button {
@@ -65,4 +67,17 @@ body {
 
 .pin-uart button {
   background: #0f0;
+}
+
+.gpio-button-wrapper div {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #8a8a8a;
+}
+
+.gpio-container-line-bottom .gpio-button-wrapper div {
+  top: unset;
+  bottom: -20px;
 }
